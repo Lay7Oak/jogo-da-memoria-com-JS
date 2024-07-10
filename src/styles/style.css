@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body{
     display: flex;
     justify-content: center;
@@ -96,3 +97,146 @@ h2{
 }
 
 
+=======
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f797c6;
+    user-select: none;
+    background: linear-gradient(325deg, #03001e 0%, #7303c0 30%, #ec38bc 70%, #7303c0 100%);
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background: linear-gradient(325deg, #03001e 0%, #7303c0 30%, #ec38bc 70%, #7303c0 100%);
+    padding: 40px 60px;
+    border-radius: 7px;
+    width: 100%;
+    max-width: 600px;
+    max-height: 95%;
+}
+
+h2 {
+    font-size: 3em;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 0.1em;
+    max-width: 95%;
+}
+
+.reset {
+    padding: 15px 20px;
+    width: 100%;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    border: none;
+    color: #000;
+    background-color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 600;
+    max-width: 95%;
+}
+
+.reset:focus {
+    color: #ec38bc;
+    background-color: #262809;
+}
+
+.game {
+    width: 90%;
+    max-width: 450px;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 10px;
+    transform-style: preserve-3d;
+    perspective: 500px;
+    max-width: 95%;
+    max-height: 95%;
+}
+.item {
+    position: relative;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+
+    transform: rotate(180deg);
+
+    font-size: 3em;
+    transition: 0.25s;
+    border-radius: 20px;
+
+     
+    max-width: 95%;
+    max-height: 95%;
+    width: 100%;
+    padding: 30% 50%;
+}
+
+.item::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:#404040;
+    
+    transition: 0.25s;
+     transform: rotateY(0deg); 
+    backface-visibility: hidden;
+}
+
+.item.boxOpen {
+    transform: rotateY(0deg);
+}
+
+.boxOpen::after {
+    transform: rotateY(180deg);
+}
+
+
+
+
+@media (max-width: 590px) {
+    .container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    .reset {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-height: 590px) and (min-width: 320px) and (orientation: landscape) {
+    
+    .container {
+        max-width: 95%;
+        max-height: auto;
+        justify-content: center; 
+        flex-direction:row;
+
+    }
+
+    .item {
+        font-size: 2.5em;
+        width: 30px;
+        justify-content: center;
+        padding: 20px 45px;
+    }
+
+
+  }
+>>>>>>> 088dd25 (Responsividade)
