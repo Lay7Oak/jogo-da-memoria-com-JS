@@ -1,8 +1,12 @@
-#Jogo da Memória
+# Jogo da Memória
+## Projeto Realizado no Bootcamp Potência Tech iFood - Desenvolvimento de Jogos (DIO)
 
-````bash
-Projeto criado com HTML, CSS e JavaScript.
-Foco: Manipulação do DOM com JavaScript.
+Este projeto foi desenvolvido utilizando HTML, CSS e JavaScript, com foco na manipulação do DOM através do JavaScript.
 
-- Em Construção . . . 
-````
+### Melhoria Aplicada
+
+- Versão  para telas menores
+
+### Melhorias Futuras
+
+- Aplicação de uma nova lógica de jogo para aumentar o grau de dificuldade
